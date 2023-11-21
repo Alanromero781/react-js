@@ -1,0 +1,242 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Lenguajes de Programación</title>
+
+    </head>
+    <body>
+        <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  main {
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  section.lenguajes {
+    width: 350px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  section.lenguajes:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .fancy {
+ background-color: transparent;
+ border: 2px solid #000;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+}
+
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: black;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: black;
+}
+
+.fancy .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: black;
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}
+        </style>
+
+<header>
+    <h1>Lenguajes de programación más usados</h1>
+    <input type="text" id="searchBar" placeholder="Buscar..." style="position: absolute; right: 0;  margin-top: -2%;">
+  </header>
+        
+    <main>
+        <section class="lenguajes" id="java">
+        <h2>Java</h2>
+        <p>Java es un lenguaje de programación...</p>
+        <img class="logo" src="../img/java.png" alt="java">
+        <a class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">Más información</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </section>
+
+        <section class="lenguajes" id="python">
+        <h2>Python</h2>
+        <p>Python es un lenguaje de programación...</p>
+        <img class="logo" src="../img/python.png" alt="python">
+        <a class="fancy" href="#">
+            <span class="top-key"></span>
+            <span class="text">Más información</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </section>
+
+        <section class="lenguajes" id="javascript">
+        <h2>JavaScript</h2>
+        <p>JavaScript es un lenguaje de programación...</p>
+          <img class="logo" src="../img/javascript.png" alt="javascript">
+        <a class="fancy" href="react.html">
+            <span class="top-key"></span>
+            <span class="text"> Más información</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </a>
+        </section>
+
+        <section class="lenguajes" id="C#">
+            <h2>C#</h2>
+            <p>JavaScript es un lenguaje de programación...</p>
+            <img class="logo" src="../img/C#.png" alt="C#">
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Más información</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a>
+        </section>
+
+        <section class="lenguajes" id="PHP">
+            
+            <h2>PHP</h2>
+            <p>JavaScript es un lenguaje de programación...</p>
+            <img class="logo" src="../img/php.png" alt="PHP">
+            <a class="fancy" href="#">
+                <span class="top-key"></span>
+                <span class="text">Más información</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+              </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Alan Ecker</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>

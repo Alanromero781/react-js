@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conceptos de React</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .info-box {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .info-box h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Conceptos de React</h1>
+    </header>
+
+    <main>
+        <div class="info-box">
+            <h2>Cuadro Comparativo entre React y JSX</h2>
+            <table>
+                <tr>
+                    <th>Característica</th>
+                    <th>React</th>
+                    <th>JSX</th>
+                </tr>
+                <tr>
+                    <td>Sintaxis</td>
+                    <td>Librería para construir interfaces de usuario</td>
+                    <td>Extensión de JavaScript que permite escribir código similar a XML/HTML para definir elementos de React</td>
+                </tr>
+                <tr>
+                    <td>Renderizado</td>
+                    <td>Utiliza el método render() para renderizar elementos en el DOM</td>
+                    <td>Se transforma a llamadas de funciones JavaScript y se renderiza mediante React</td>
+                </tr>
+                <tr>
+                    <td>Componentes</td>
+                    <td>Permite la creación de componentes reutilizables</td>
+                    <td>Los componentes JSX son bloques de construcción fundamentales en React</td>
+                </tr>
+    
+            </table>
+        </div>
+ 
+        <div class="info-box">
+            <h2>¿Qué son clases en React?</h2>
+            <p>React.js, desarrollado por Facebook, es una potente biblioteca de JavaScript de código abierto que se ha convertido en un pilar fundamental en el desarrollo de interfaces de usuario interactivas y eficientes para aplicaciones web. Introducido en 2013, React se destaca por su enfoque en la construcción de aplicaciones mediante el uso de componentes reutilizables. Estos componentes, que pueden contener tanto lógica como presentación, facilitan la creación y mantenimiento de interfaces complejas. React utiliza JSX, una extensión de JavaScript que permite escribir código similar a HTML, mejorando la legibilidad y la eficiencia del desarrollo. Un concepto clave es el DOM virtual, que permite actualizaciones eficientes del DOM real al comparar y actualizar solo los elementos que han cambiado. La unidireccionalidad de los datos simplifica el seguimiento del flujo de información en la aplicación. La introducción de React Hooks en la versión 16.8 ha mejorado aún más la capacidad de trabajar con componentes funcionales, proporcionando acceso a características previamente asociadas solo con componentes de clase. React se complementa con otras herramientas como React Router para la gestión de rutas y bibliotecas como Redux para la gestión del estado. Esta biblioteca ha ganado popularidad debido a su flexibilidad, rendimiento y la sólida comunidad que la respalda, convirtiéndola en una opción preferida para el desarrollo web moderno.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Principales eventos de React</h2>
+            
+            <p>React permite el uso de una variedad de eventos para abordar diferentes interacciones del usuario. Al gestionar estos eventos, puedes actualizar el estado de tu componente y, en consecuencia, actualizar la interfaz de usuario de manera dinámica. La gestión de eventos es esencial para construir aplicaciones interactivas y receptivas en ReactJS.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Enlace a un Mapa conceptual de React</h2>
+            
+            <p>Puedes encontrar un mapa conceptual de React <a href="mapa_conceptual.html" target="_blank">aquí</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        © 2023 Alan Ecker
+    </footer>
+
+</body>
+</html>
